@@ -1,0 +1,10 @@
+hours_per_day = float(input("How much hour's do you use your ac per day: "))
+watts = float(input("How much watts does your ac use: "))
+kWh_cost = float(input("What is your price per kWh: "))
+kwh = kWh_cost / 1000
+cost_per_day = round(watts * kwh * hours_per_day,2)
+print("Cost Per Day:", cost_per_day)
+cost_per_month = round(cost_per_day * 30.437,2)
+print("Cost Per Month:", cost_per_month)
+cost_per_year = round(cost_per_month * 12,2)
+print("Cost Per Year:", cost_per_year) 
